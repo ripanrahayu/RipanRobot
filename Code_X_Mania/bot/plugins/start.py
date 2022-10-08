@@ -55,19 +55,19 @@ async def start(b, m):
         await m.reply_sticker("CAACAgUAAxkBAAI7LmGrSXRRncbHQiifxd0f6gbqO0iSAAL5AAM0dhBWbFxFr9ji9CoeBA")
         await m.reply_text(
             text=f"""
-👋 Hai {m.from_user.mention}, aku adalah <b>YasirRoBot</b>. Bot yang bisa mengubah file Telegram menjadi direct link dan link streaming tanpa nunggu lama.\n
+👋 Hai {m.from_user.mention}, aku adalah <b>RipanRoBot</b>. Bot yang bisa mengubah file Telegram menjadi direct link dan link streaming tanpa nunggu lama.\n
 Kirimkan aku sebuah file atau video dan lihat keajaiban yang terjadi!
 Klik /help untuk melihat info lengkapnya.\n
-<b>🍃 Bot dibuat oleh :</b>@YasirArisM
+<b>🍃 Bot dibuat oleh :</b>@RipanRahayu
 <b><u>PERINGATAN 🚸</u></b>
 <b>Jangan Spam bot!!!.</b>""",
             parse_mode="HTML",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton('Owner', url=f"https://t.me/{Var.OWNER_USERNAME}"),
-                                                                                       InlineKeyboardButton('YMovieZNew Channel', url='https://t.me/YMovieZNew') ] ]  ) )
+                                                                                       InlineKeyboardButton('Ripan Official', url='https://t.me/ripanofficial') ] ]  ) )
     elif m.text == "/start donate":
         await m.reply_text(
-            text='🌟 Jika kamu merasa bot ini sangat bermanfaat, kamu bisa donasi melalui link dan nomer dibawah ini. Berapapun nilainya saya sangat berterimakasih, jika ada kendala kamu bisa chat ke @YasirArisM. Thanks you.. \n\n~ <b>Saweria :</b> https://saweria.co/yasirarism\n~ <b>Dana :</b> 088220143804 (A.N : Yasir Aris M)',
+            text='🌟 Jika kamu merasa bot ini sangat bermanfaat, kamu bisa donasi melalui link dan nomer dibawah ini. Berapapun nilainya saya sangat berterimakasih, jika ada kendala kamu bisa chat ke @RipanRahayu. Thanks you.. \n\n~ <b>Saweria :</b> https://saweria.co/ripanrahayu\n~ <b>Dana :</b> 085523607638 (A.N : Ripan Rahayu)',
             disable_web_page_preview=True
         )
     else:
@@ -117,13 +117,13 @@ async def help_handler(bot, message):
             f"**#NEW_USER **\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) memulai bot kamu.."
         )   
     await message.reply_text(
-       text=f"{message.from_user.mention} kirimkan aku sebuah file dan aku akan mengubah nya menjadi direct link dan stream link!\nJika kamu suka dengan bot ini, kamu bisa donasi ke owner melalui:\n~ <b>Saweria :</b> https://saweria.co/yasirarism\n~ <b>Dana :</b> 088220143804 (A.N Yasir Aris)",
+       text=f"{message.from_user.mention} kirimkan aku sebuah file dan aku akan mengubah nya menjadi direct link dan stream link!\nJika kamu suka dengan bot ini, kamu bisa donasi ke owner melalui:\n~ <b>Saweria :</b> https://saweria.co/ripanrahayu\n~ <b>Dana :</b> 085523607638 (A.N Ripan Rahayu)",
             parse_mode="HTML",
             
           reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("🏵 Owner", url="https://t.me/YasirArisM")],
-                [InlineKeyboardButton("🍺 Update Channel", url="https://t.me/YasirPediaChannel")]
+                [InlineKeyboardButton("🏵 Owner", url="https://t.me/RipanRahayu")],
+                [InlineKeyboardButton("🍺 Update Channel", url="https://t.me/ripanofficial")]
             ]
         )
     )
